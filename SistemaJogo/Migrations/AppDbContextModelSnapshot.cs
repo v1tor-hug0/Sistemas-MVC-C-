@@ -41,8 +41,8 @@ namespace SistemaJogo.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("Poder")
-                        .HasColumnType("int");
+                    b.Property<double>("Poder")
+                        .HasColumnType("float");
 
                     b.HasKey("Id");
 

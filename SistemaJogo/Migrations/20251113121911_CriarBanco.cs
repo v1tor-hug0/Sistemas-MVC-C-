@@ -18,7 +18,7 @@ namespace SistemaJogo.Migrations
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Nome = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Nivel = table.Column<int>(type: "int", nullable: false),
-                    Poder = table.Column<int>(type: "int", nullable: false),
+                    Poder = table.Column<double>(type: "float", nullable: false),
                     Classe = table.Column<string>(type: "nvarchar(13)", maxLength: 13, nullable: false)
                 },
                 constraints: table =>

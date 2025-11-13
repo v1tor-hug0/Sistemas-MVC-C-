@@ -200,3 +200,4 @@ C:\Users\43159446883\Desktop\SistemasMvc\SistemaJogo\obj\Debug\net9.0\refint\Sis
 C:\Users\43159446883\Desktop\SistemasMvc\SistemaJogo\obj\Debug\net9.0\SistemaJogo.pdb
 C:\Users\43159446883\Desktop\SistemasMvc\SistemaJogo\obj\Debug\net9.0\SistemaJogo.genruntimeconfig.cache
 C:\Users\43159446883\Desktop\SistemasMvc\SistemaJogo\obj\Debug\net9.0\ref\SistemaJogo.dll
+C:\Users\43159446883\Desktop\SistemasMvc\SistemaJogo\obj\Debug\net9.0\SistemaJogo.sourcelink.json

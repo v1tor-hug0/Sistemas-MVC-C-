@@ -11,7 +11,7 @@ using SistemaJogo.Data;
 namespace SistemaJogo.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20251112133932_CriarBanco")]
+    [Migration("20251113121911_CriarBanco")]
     partial class CriarBanco
     {
         /// <inheritdoc />
@@ -44,8 +44,8 @@ namespace SistemaJogo.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("Poder")
-                        .HasColumnType("int");
+                    b.Property<double>("Poder")
+                        .HasColumnType("float");
 
                     b.HasKey("Id");
 

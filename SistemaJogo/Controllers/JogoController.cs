@@ -46,6 +46,8 @@ namespace SistemaJogo.Controllers
                 return BadRequest("Tipo de personagem inválido.");
             }
 
+            personagem.CalcularPoder();
+
             _context.TabelaPersonagen.Add(personagem);
             await _context.SaveChangesAsync();
             return RedirectToAction("Index");

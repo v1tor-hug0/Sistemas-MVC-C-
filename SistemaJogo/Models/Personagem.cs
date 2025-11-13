@@ -8,7 +8,7 @@ namespace SistemaJogo.Models
         public int Id { get; set; }
         public string Nome { get; set; } = string.Empty;
         public int Nivel { get; set; }
-         public int Poder { get; set; }
+         public double Poder { get; set; }
 
         public Personagem() { }
          
