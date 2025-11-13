@@ -1,0 +1,17 @@
+@model SistemaJogo.Models.Personagem
+
+<h2>Criar Personagem</h2>
+
+<form asp-action="Criar">
+    <label for="">Nome:</label>
+    <input type="text" name="nomeC" class="form-control" id="">
+    <label for="">Nivel:</label>
+    <input type="number" name="nivelC" class="form-control" id="">
+    <label for="">Classe:</label>
+    <select name="classe" class="form-control" id="">
+        <option value="Guerreiro">Guerreiro</option>
+        <option value="Mago">Mago</option>
+    </select>
+
+    <button type="submit" class="btn btn-success">Salvar</button>
+</form>

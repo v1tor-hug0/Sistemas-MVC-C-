@@ -1,0 +1,19 @@
+@model MVC_3.Models.Veiculo
+
+<h2> Cadastrar Veiculo</h2>
+
+<form asp-action="Criar">
+    <Label>Modelo</Label>
+    <input type="text" class="form-control" name="CModelo" id="">
+
+    <label for="">Ano</label>
+    <input type="number" name="CAno" class="form-control" step="0.01" id=""> @*Step controla as casas decimais*@
+
+    <label for="">Cargo :</label>
+    <select name="Tipo" id="">
+        <option value="Carro">Carro</option>
+        <option value="Moto">Moto</option>
+    </select>
+
+    <button type="submit" class="btn-success">Salvar</button>
+</form>

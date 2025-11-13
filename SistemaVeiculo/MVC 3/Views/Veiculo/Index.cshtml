@@ -1,0 +1,32 @@
+@model List<MVC_3.Models.Veiculo>
+
+@{
+    ViewData["Title"] = "Veículos";
+}
+
+<h2>Veículos</h2>
+
+<a asp-action="Criar" class="btn btn-primary">Novo Veículo</a>
+
+<table class="table mt-3">
+    <tr>
+        <th>Modelo</th>
+        <th>Tipo</th>
+        <th>Ano</th>
+        <th>Revisão</th>
+        <th>Ações</th>
+    </tr>
+
+    @foreach (var veiculo in Model)
+    {
+        <tr>
+            <td>@veiculo.Modelo</td>
+            <td>@veiculo.GetType().Name</td> @* mostra o tipo do objeto (Carro / Moto) *@
+            <td>@veiculo.Ano</td>
+            <td>@veiculo.CalcularRevisao()</td>
+            <td>
+                <a asp-action="Deletar" asp-route-id="@veiculo.Id" class="btn btn-danger">Excluir</a>
+            </td>
+        </tr>
+    }
+</table>

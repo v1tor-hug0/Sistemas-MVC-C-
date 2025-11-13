@@ -1,0 +1,19 @@
+@model SistemaFuncionario.Models.Curso
+
+<h2>Cadastrar Cursos</h2>
+
+<form asp-action="Criar">
+    <label for="">Nome:</label>
+    <input type="text" name="nomeC" class="form-control"/>
+
+    <label for="">Horas:</label>
+    <input type="number" name="horasC" class="form-control"/>
+
+    <label for="">Tipo de Curso:</label>
+    <select name="tipoCurso" id="" class="form-control">
+        <option value="Tecnico">Tecnico</option>
+        <option value="Superior">Superior</option>
+    </select>
+
+    <button type="submit" class="btn btn-success">Salvar</button>
+</form>
